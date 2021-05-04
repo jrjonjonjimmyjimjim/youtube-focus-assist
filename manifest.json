@@ -2,5 +2,16 @@
     "name": "Youtube Focus Assist",
     "description": "A browser plugin designed to maximize your productivity by restricting access during work hours, and hiding video recommendations if desired.",
     "version": "0.1",
-    "manifest_version": 3
+    "manifest_version": 3,
+    
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["lockout.js"]
+        }
+    ],
+
+    "permissions": [
+        "storage"
+    ]
 }
