@@ -4,6 +4,14 @@
     "version": "0.1",
     "manifest_version": 3,
     
+    "web_accessible_resources": [
+        {
+            "resources": ["lockout.html"],
+            "matches": ["*://*.youtube.com/*"]
+        }
+        
+    ],
+
     "content_scripts": [
         {
             "matches": ["*://*.youtube.com/*"],
