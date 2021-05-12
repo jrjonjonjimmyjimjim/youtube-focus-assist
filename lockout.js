@@ -14,7 +14,8 @@ chrome.storage.local.get(['restriction_level'], function(result) {
 });
 
 if (restriction_level == 2) {
-    window.location.replace('lockout.html');
+    let lockoutPageUrl = chrome.runtime.getURL('lockout.html');
+    window.location.replace(lockoutPageUrl);
 
 } else if (restriction_level == 1) {
     // Block suggestions
