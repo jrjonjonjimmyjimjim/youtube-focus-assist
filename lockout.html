@@ -1,4 +1,29 @@
 <html>
-    <h1>Youtube is blocked.</h1>
-    <p>Contact your admin for details.</p>
+    <head>
+        <title>Youtube Focus Assist</title>
+    </head>
+    <body>
+        <h1 id="page-header">Youtube Focus Assist</h1>
+        <h1 id="settings-header">Youtube is blocked.</h1>
+        <p id="message">You are seeing this message because you've attempted to access Youtube during
+            defined focus hours. If you have important content that you have to view, you
+            can click "Continue to Youtube" below, which will direct you to the site with
+            suggestions and comments disabled.
+        </p>
+        <button id="continue-button">Continue to Youtube</button>
+        <button id="back-button">Cancel</button>
+        <p id="focus-configure-info">
+            Manage focus features
+        </p>
+        <form>
+            <label for="main-focus-setting">Focus Assist Features</label>
+            <input type="checkbox" name="main-focus-setting">
+            <label for="suggestions-focus-setting">Block Suggestions</label>
+            <input type="checkbox" name="suggestions-focus-setting">
+            <label for="comments-focus-setting">Block Comments</label>
+            <input type="checkbox" name="comments-focus-setting">
+            <label for="searchbar-focus-setting">Block Search Bar</label>
+            <input type="checkbox" name="searchbar-focus-setting">
+        </form>
+    </body>
 </html>
