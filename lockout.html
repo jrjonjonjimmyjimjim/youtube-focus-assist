@@ -7,29 +7,60 @@
             }
             #page-container {
                 background-color: #333333;
-                border-radius: 1em;
-                border: 0.25em solid #cccccc;
+                border-radius: 1rem;
+                border: 0.25rem solid #cccccc;
+                padding: 1rem;
+                margin: 1rem;
+            }
+            #settings-header-container {
+                text-align: center;
+            }
+            #message-container {
+                text-align: center;
+            }
+            #buttons-container {
+                width: max-content;
+                margin: auto;
             }
             p {
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 2rem;
+                font-size: 1.5rem;
+                color: #dddddd;
             }
             h1 {
-                font-size: 8rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 4rem;
+                color: #dddddd;
+            }
+            div {
+                padding: 0.5rem;
+            }
+            div.text-container {
+                background-color: #444444;
+                border-radius: 1rem;
+                margin: 0.5rem;
             }
         </style>
     </head>
     <body>
         <div id="page-container">
-            <h1 id="page-header">Youtube Focus Assist</h1>
-            <h1 id="settings-header">Youtube is blocked.</h1>
-            <p id="message">You are seeing this message because you've attempted to access Youtube during
-                defined focus hours. If you have important content that you have to view, you
-                can click "Continue to Youtube" below, which will direct you to the site with
-                suggestions and comments disabled.
-            </p>
-            <button id="continue-button">Continue to Youtube</button>
-            <button id="back-button">Cancel</button>
+            <div id="page-header-container" class="text-container">
+                <h1 id="page-header">Youtube Focus Assist</h1>
+            </div>
+            <div id="settings-header-container" class="text-container">
+                <h1 id="settings-header">Youtube is blocked.</h1>
+            </div>
+            <div id="message-container" class="text-container">
+                <p id="message">You are seeing this message because you've attempted to access Youtube during
+                    defined focus hours. If you have important content that you have to view, you
+                    can click "Continue to Youtube" below, which will direct you to the site with
+                    suggestions and comments disabled.
+                </p>
+            </div>
+            <div id="buttons-container">
+                <button id="continue-button">Continue to Youtube</button>
+                <button id="back-button">Cancel</button>
+            </div>
             <p id="focus-configure-info">
                 Manage focus features
             </p>
