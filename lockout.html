@@ -22,6 +22,20 @@
                 width: max-content;
                 margin: auto;
             }
+            #focus-configure-container {
+                background-color: #444488;
+                border-radius: 1rem;
+                text-align: center;
+            }
+            #focus-configure-container form label {
+                font-size: 1rem;
+                color: #dddddd;
+            }
+            #focus-configure-form-container {
+                text-align: left;
+                width: 50%;
+                margin: auto;
+            }
             p {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 1.5rem;
@@ -61,19 +75,23 @@
                 <button id="continue-button">Continue to Youtube</button>
                 <button id="back-button">Cancel</button>
             </div>
-            <p id="focus-configure-info">
-                Manage focus features
-            </p>
-            <form>
-                <label for="main-focus-setting">Focus Assist Features</label>
-                <input type="checkbox" name="main-focus-setting">
-                <label for="suggestions-focus-setting">Block Suggestions</label>
-                <input type="checkbox" name="suggestions-focus-setting">
-                <label for="comments-focus-setting">Block Comments</label>
-                <input type="checkbox" name="comments-focus-setting">
-                <label for="searchbar-focus-setting">Block Search Bar</label>
-                <input type="checkbox" name="searchbar-focus-setting">
-            </form>
+            <div id="focus-configure-container">
+                <p id="focus-configure-info">
+                    Manage focus features
+                </p>
+                <div id="focus-configure-form-container">
+                    <form>
+                        <label for="main-focus-setting">Focus Assist Features</label>
+                        <input type="checkbox" name="main-focus-setting"><br>
+                        &emsp;<label for="suggestions-focus-setting">Block Suggestions</label>
+                        <input type="checkbox" name="suggestions-focus-setting"><br>
+                        &emsp;<label for="comments-focus-setting">Block Comments</label>
+                        <input type="checkbox" name="comments-focus-setting"><br>
+                        &emsp;<label for="searchbar-focus-setting">Block Search Bar</label>
+                        <input type="checkbox" name="searchbar-focus-setting"><br>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
